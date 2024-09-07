@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaE.Main">
+    
+    <!--Caja Exterior-->
+    <StackLayout>
+        
+        <!--Caja Interior I-->
+        <Frame BackgroundColor="#588157" VerticalOptions="FillAndExpand">
+
+        <!--Caja Interior II-->
+            <StackLayout Spacing="20" Margin="8" VerticalOptions="Center">
+
+                <Label Text="Iniciar Sesión" TextColor="#f8f454" FontSize="35" HorizontalTextAlignment="Center"></Label>
+
+                <Frame CornerRadius="60" BackgroundColor="#a3b18a" Padding="40">
+                    <StackLayout>
+                        <Image Source="persona.png" HeightRequest="100" ></Image>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                   
+                    <StackLayout>
+                        <Label Text="Email" FontSize="Title" TextColor="White"></Label>
+                        <Entry TextColor="Wheat" Placeholder="Kevin121999.com" Text="" x:Name="SEmail"></Entry>
+                        
+                        <Label Text="Contraseña" FontSize="Title" TextColor="White"></Label>
+                        <Entry TextColor="Wheat" Placeholder="8 caracteres" Text="" x:Name="SContraseña" IsPassword="true"></Entry>
+
+                    </StackLayout>
+
+                    <Button Text="Se te olvido la contraseña" TextColor="Blue" x:Name="btnOlvido" Clicked="btnOlvido_Clicked"
+                        BackgroundColor="#588157" FontSize="Subtitle" HorizontalOptions="Start"  ></Button>
+                    
+                </StackLayout>
+
+                <StackLayout Spacing="10">
+                    <Button Text="Aceptar" TextColor="White" x:Name="btnAceptarI" Clicked="btnAceptarI_Clicked"
+                            BackgroundColor="ForestGreen" CornerRadius="50"></Button>
+                    <Button Text="Regresar" TextColor="White" x:Name="btnRegresarI" Clicked="btnRegresarI_Clicked"
+                            BackgroundColor="Red" CornerRadius="50" ></Button>
+                </StackLayout>
+                
+            </StackLayout>
+
+        </Frame>
+    </StackLayout>
+</ContentPage>

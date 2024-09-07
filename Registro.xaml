@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaE.Registro">
+    <!--Caja Exterior-->
+    <StackLayout>
+
+        <!--Caja Interior I-->
+        <Frame BackgroundColor="#588157" VerticalOptions="FillAndExpand">
+            <!--Caja Interior II-->
+            <StackLayout Spacing="2" Margin="8" VerticalOptions="Center" >
+
+                <Label Text="Registro de Usuario" TextColor="#f8f454" FontSize="30" HorizontalTextAlignment="Center"></Label>
+
+                <Frame BackgroundColor="#a3b18a" CornerRadius="40" Padding="10" Margin="20">
+                    <Image Source="persona.png" HeightRequest="50" WidthRequest="140"></Image>
+                </Frame>
+
+                <Label Text="Usuario" FontSize="18" TextColor="White"></Label>
+                <Entry TextColor="Wheat" Placeholder="Kevin121999" Text="" x:Name="IngUsuario"></Entry>
+
+                <Label Text="E-mail" FontSize="18" TextColor="White"></Label>
+                <Entry TextColor="Wheat" Placeholder="Kevin121999@outlook.com" Text="" x:Name="IngEmail"></Entry>
+
+                <Label Text="Teléfono" FontSize="18" TextColor="White"></Label>
+                <Entry TextColor="Wheat"  Placeholder="8121832132" Text="" x:Name="IngTelefono"></Entry>
+
+                <Label Text="Contraseña" FontSize="18" TextColor="White"></Label>
+                <Entry TextColor="Wheat" Placeholder="8 caracteres" Text="" x:Name="IngContraseña" IsPassword="true"></Entry>
+
+                <Label Text="Confirmar Contraseña" FontSize="18" TextColor="White"></Label>
+                <Entry TextColor="Wheat" Placeholder="8 caracteres" Text="" x:Name="IngConfirCont" IsPassword="true"></Entry>
+
+                <!--Seccion para botones de Aceptar y Cancelar en Inicio asignados uno a lado de otro-->
+                <StackLayout Spacing="5" Padding="5">
+                    <Button Text="Aceptar" TextColor="White" x:Name="btnAceptarR" Clicked="btnAceptarR_Clicked"
+                            BackgroundColor="ForestGreen" CornerRadius="50">
+                    </Button>
+
+                    <Button Text="Cancelar" TextColor="White" x:Name="btnCancelarR" Clicked="btnCancelarR_Clicked"
+                            Background="Red" CornerRadius="50">
+                    </Button>
+                </StackLayout>
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

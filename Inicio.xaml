@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaE.Inicio">
+    <ContentPage.Content>
+
+        <StackLayout Spacing="10">
+
+            <Frame BackgroundColor="#588157" VerticalOptions="FillAndExpand">
+
+                <StackLayout Spacing='20' VerticalOptions="Center" Padding="25">
+
+                    <Frame BackgroundColor="#a3b18a" CornerRadius="30">
+                        <Image Source="agenda.png"  HeightRequest="250" ></Image>
+                    </Frame>
+
+                    <Label Text="Mi Agenda Escolar" HorizontalOptions="Center" FontSize="Title" TextColor="#f8f454"></Label>
+
+                    <StackLayout Spacing="10">
+                        <Button Text="Iniciar Sesion" x:Name="InSesion" Clicked="InSesion_Clicked"  TextColor="White" CornerRadius="50" BackgroundColor="Red"></Button>
+
+                        <Button Text="Registrarse" x:Name="Registro" Clicked="Registro_Clicked" TextColor="White" CornerRadius="50" BackgroundColor="Blue"></Button>
+                    </StackLayout>
+                    
+                    
+                </StackLayout>
+                
+            </Frame>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>
+    

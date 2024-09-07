@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaE.Validacion">
+    <ContentPage.Content>
+
+        <!--Caja Exterior-->
+        <StackLayout BackgroundColor="Gray">
+
+            <!--Caja Interior I-->
+            <Frame BackgroundColor="SlateGray" Margin="0,100,0,100" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="50">
+                <!--Caja Interior II-->
+                <StackLayout Spacing="20">
+                    <Label Text="Registro de Usuario" TextColor="BlanchedAlmond" FontSize="Title" HorizontalOptions="Center" ></Label>
+                    
+                    <Image Source="check.png" HeightRequest="250"></Image>
+
+                    <Label Text="Se ha registrado el usuario correctamente" TextColor="White" FontSize="Subtitle" ></Label>
+
+                    <StackLayout>
+                        <Button Text="Aceptar" TextColor="White" x:Name="btnAceptarV" Clicked="btnAceptarV_Clicked" BackgroundColor="ForestGreen" CornerRadius="50"></Button>
+                    </StackLayout>
+                    
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaE.Recuperacion">
+    <ContentPage.Content>
+        <!--Caja Exterior-->
+        <StackLayout BackgroundColor="SlateGray">
+
+            <!--Caja Interior I-->
+            <Frame BackgroundColor="Gray" VerticalOptions="FillAndExpand" Margin="0,25,0,25" >
+                <!--Caja Interior II-->
+                <StackLayout Spacing="20" Margin="5" HorizontalOptions="Center">
+                    <Label Text="Modo Recuperación" TextColor="LightGray" FontSize="Title" HorizontalOptions="Center"></Label>
+
+                    <StackLayout>
+                        <Image Source="key.png" WidthRequest="100"></Image>
+                    </StackLayout>
+                    
+                    <Label Text="¿Tienes problemas para iniciar Sesión?" TextColor="White" FontSize="Large"></Label>
+
+                    <Label Text="Ingrese al menos un campo para iniciar la recuperación de la cuenta" TextColor="WhiteSmoke" FontSize="Subtitle" ></Label>
+
+                    <StackLayout>
+                        <Label Text="E-mail" TextColor="White" FontSize="20"></Label>
+                        <Entry TextColor="Wheat" Placeholder="Kevin121999" Text="" x:Name="REmail"></Entry>
+
+                        <Label Text="Télefono" TextColor="White" FontSize="20"></Label>
+                        <Entry TextColor="Wheat"  Placeholder="8121832132" Text="" x:Name="RTelefono"></Entry>
+
+                    </StackLayout>
+                    
+                    <StackLayout Spacing="10">
+                        <Button Text="Recuperar" TextColor="White" x:Name="BtnRecuperarR" Clicked="BtnRecuperarR_Clicked"
+                                BackgroundColor="ForestGreen" CornerRadius="50"></Button>
+                        
+                        <Button Text="Cancelar" TextColor="White" x:Name="BtnCancelarR" Clicked="BtnCancelarR_Clicked"
+                                BackgroundColor="Red" CornerRadius="50"></Button>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
